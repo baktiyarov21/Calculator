@@ -3,11 +3,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-            Random random = new Random();
+        Rectahgle rectahgle = new Rectahgle(15,10);
+        rectahgle.perimeter(25);
+
             int n = 100;
             double[] array = new double[n];
             for (int i = 0; i < array.length; i++) {
-                array[i] = random.nextInt(100);
+                array[i] = Math.random();
             }
 
             double max = array[0]; // Массив не должен быть пустым
